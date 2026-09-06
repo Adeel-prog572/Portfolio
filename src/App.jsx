@@ -153,6 +153,7 @@ function App() {
             <span>03</span>
             <p>PROJECTS</p>
           </div>
+          
 
           <div className="projects-header">
             <h2>
@@ -166,7 +167,12 @@ function App() {
           </div>
 
           <div className="projects-grid">
-            <article className="project">
+            <a
+  href=" https://adeel-prog572.github.io/calculator-app/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="project"
+>
               <div className="project-top">
                 <span>01</span>
                 <span className="arrow">↗</span>
@@ -187,9 +193,15 @@ function App() {
                 <span>CSS</span>
                 <span>JavaScript</span>
               </div>
-            </article>
+              </a>
+            
 
-            <article className="project">
+              <a
+  href=" https://adeel-prog572.github.io/weather-app/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="project"
+>
               <div className="project-top">
                 <span>02</span>
                 <span className="arrow">↗</span>
@@ -210,7 +222,7 @@ function App() {
                 <span>CSS</span>
                 <span>JavaScript</span>
               </div>
-            </article>
+            </a>
 
             <article className="project">
               <div className="project-top">
