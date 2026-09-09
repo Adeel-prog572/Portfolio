@@ -2,28 +2,19 @@
 
 header("Content-Type: application/json");
 
-$conn = new mysqli("localhost", "root", "", "student_management");
+require_once "db.php";
 
-if ($conn->connect_error) {
-    die(json_encode([
-        "success" => false,
-        "message" => "Database connection failed"
-    ]));
-}
+$id = intval($_GET["id"] ?? 0);
 
-$id = $_POST['id'] ?? '';
-
-if ($id === '') {
+if ($id <= 0) {
     echo json_encode([
         "success" => false,
-        "message" => "Student ID is required"
+        "message" => "Invalid student ID"
     ]);
     exit;
 }
 
-$sql = "DELETE FROM students WHERE id = ?";
-
-$stmt = $conn->prepare($sql);
+$stmt = $conn->prepare("DELETE FROM students WHERE id = ?");
 $stmt->bind_param("i", $id);
 
 if ($stmt->execute()) {

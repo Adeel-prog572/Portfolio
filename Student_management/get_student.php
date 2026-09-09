@@ -2,18 +2,19 @@
 
 header("Content-Type: application/json");
 
-$conn = new mysqli("localhost", "root", "", "student_management");
+require_once "db.php";
 
-if ($conn->connect_error) {
-    die(json_encode([
-        "success" => false,
-        "message" => "Database connection failed"
-    ]));
-}
-
-$sql = "SELECT * FROM students ORDER BY id DESC";
+$sql = "SELECT id, name, rollNO, className, email FROM students ORDER BY id DESC";
 
 $result = $conn->query($sql);
+
+if (!$result) {
+    echo json_encode([
+        "success" => false,
+        "message" => $conn->error
+    ]);
+    exit;
+}
 
 $students = [];
 

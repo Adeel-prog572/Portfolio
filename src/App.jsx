@@ -239,6 +239,7 @@ function App() {
                   showcase skills and projects.
                 </p>
               </div>
+             
 
               <div className="tags">
                 <span>React</span>
@@ -246,6 +247,38 @@ function App() {
                 <span>CSS</span>
               </div>
             </article>
+            <a
+  href="http://localhost/Portfolio/Student_management/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="project"
+>
+  <div className="project-top">
+    <span>04</span>
+    <span className="arrow">↗</span>
+  </div>
+
+  <div>
+    <p className="project-category">PHP • MYSQL</p>
+
+    <h3>Student Management System</h3>
+
+    <p className="project-description">
+      A student management system for adding, viewing and deleting
+      student records with database integration.
+    </p>
+  </div>
+
+  <div className="tags">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>PHP</span>
+    <span>MySQL</span>
+  </div>
+</a>
+            
+ 
           </div>
         </section>
 
