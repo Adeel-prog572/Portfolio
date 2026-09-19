@@ -277,6 +277,34 @@ function App() {
     <span>MySQL</span>
   </div>
 </a>
+<a
+  href="https://adeel-prog572.github.io/Task_management/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="project"
+>
+  <div className="project-top">
+    <span>05</span>
+    <span className="arrow">↗</span>
+  </div>
+
+  <div>
+    <p className="project-category">JAVASCRIPT</p>
+
+    <h3>Task Management App</h3>
+
+    <p className="project-description">
+      A responsive task management application for creating,
+      organizing and managing tasks through a clean interface.
+    </p>
+  </div>
+
+  <div className="tags">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+  </div>
+</a>
             
  
           </div>
@@ -284,7 +312,7 @@ function App() {
 
         {/* CONTACT */}
         <section id="contact" className="contact">
-          <p className="small-title">04 — CONTACT</p>
+          <p className="small-title">05 — CONTACT</p>
 
           <h2>
             Let's build something
