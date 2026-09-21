@@ -248,7 +248,7 @@ function App() {
               </div>
             </article>
             <a
-  href="http://localhost/Portfolio/Student_management/"
+  href="https://github.com/Adeel-prog572/Student_management"
   target="_blank"
   rel="noopener noreferrer"
   className="project"
