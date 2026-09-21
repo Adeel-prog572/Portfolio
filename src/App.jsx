@@ -312,7 +312,7 @@ function App() {
 
         {/* CONTACT */}
         <section id="contact" className="contact">
-          <p className="small-title">05 — CONTACT</p>
+          <p className="small-title">04 — CONTACT</p>
 
           <h2>
             Let's build something
